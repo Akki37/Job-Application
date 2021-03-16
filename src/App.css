@@ -1,0 +1,11 @@
+.App{
+  position: relative;
+  width: 100vw;
+}
+.title{
+  position: relative;
+  width:50% ;
+  left:25% ;
+  font-size: 30px;
+  color: white;
+}

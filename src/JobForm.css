@@ -1,0 +1,94 @@
+.form{
+    position: relative;
+    width:50vw ;
+    background-color: white;
+    border-radius: 3px;
+    padding-top: 50px ;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.253);
+}
+.form_div{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px 0 ;
+}
+ .form_div label{
+  position: relative;
+  padding: 5px 10px;
+  width: 25%;
+}
+.form_div input , .form_div select{
+    position: relative;
+    width: 70%;
+    height: 30px;
+    padding: 0 10px;
+    
+}
+.form_div input:focus , .form_div select:focus ,.form_div textarea:focus{
+    outline: none;
+}
+.form_div textarea{
+    width: 70%;
+    max-width: 70%;
+    min-width: 70%;
+    height: 90px;
+    max-height: 100px;
+    min-height: 90px;
+    padding: 5px 10px;
+}
+.form .submitBtn{
+   position: relative;
+   display: flex;
+   justify-content: flex-start;
+   align-content:center;
+   padding: 40px 10px;
+}
+.form .submitBtn input{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    left:10%;
+    width: 120px;
+    padding: 10px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: rgb(45,110,214);
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.form_div .textarea{
+  top: -30px;
+}
+.Error{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px ;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    z-index: 1;
+    left :28%;
+    background-color: rgba(128, 128, 128, 0.39);
+
+}
+.Error::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(128, 128, 128, 0.39) transparent ;
+    z-index: 1;
+}
