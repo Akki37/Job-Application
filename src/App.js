@@ -15,11 +15,6 @@ function App(props) {
   }
   return (
     <div className="App">
-      <div>
-        {UserData.map((user)=>{
-          return <p>{user.Name}</p>
-        })}
-      </div>
       <div className="title">Apply For Job</div>
       <FormWrapper AddFormData={AddFormData}/>
     </div>
