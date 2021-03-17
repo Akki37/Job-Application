@@ -25,6 +25,24 @@
     padding: 0 10px;
     
 }
+.form_div .inputContact{
+    position: relative;
+    display: flex;
+    left: 5px;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+}
+.inputContact .prefix {
+    position: relative;
+    width: 10%;
+    height: 30px;
+    padding: 0 10px;
+}
+.inputContact #ContactNo{
+    position: relative;
+    width: 90%;
+}
 .form_div input:focus , .form_div select:focus ,.form_div textarea:focus{
     outline: none;
 }

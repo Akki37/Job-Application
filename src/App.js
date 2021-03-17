@@ -1,27 +1,25 @@
-import React,{useState,useEffect} from "react"
+import React from "react"
+import axios from "axios"
+import FormWrapper from "./FormWrapper"
 import './App.css';
-import FormWrapper from "./FormWrapper";
 
 function App(props) {
-  const[UserData,setUserData]=useState([])
-  useEffect(() => {
-      setUserData(JSON.parse(localStorage.getItem("UserData")))
-  },[])
+  
 
   const AddFormData=(data)=>{
-    const result = [...UserData,data]
-    setUserData(result)
-    localStorage.setItem("UserData",JSON.stringify(result))
+    axios.post("https://dct-application-form.herokuapp.com/users/application-form",data)
+    .then((res)=>{
+      console.log(res.data);
+      alert("data successfully sent")
+    })
+    .catch((err)=>{
+      alert(err.message)
+    })
   }
   return (
     <div className="App">
-      <div>
-        {UserData.map((user)=>{
-          return <p>{user.Name}</p>
-        })}
-      </div>
-      <div className="title">Apply For Job</div>
-      <FormWrapper AddFormData={AddFormData}/>
+        <div className="title">Apply For Job</div>
+            <FormWrapper AddFormData={AddFormData}/>   
     </div>
 
   );
