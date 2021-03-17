@@ -17,9 +17,9 @@ function App(props) {
     })
   }
   return (
-    <div className="App">
-        <div className="title">Apply For Job</div>
-            <FormWrapper AddFormData={AddFormData}/>   
+    <div className="App">        
+      <div className="title">Apply For Job</div>
+      <FormWrapper AddFormData={AddFormData}/>
     </div>
 
   );
