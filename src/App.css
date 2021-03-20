@@ -1,11 +1,17 @@
 .App{
   position: relative;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.App_Centeralised{
+  position: relative;
+  width: 50vw;
+  min-width: 425px;
 }
 .title{
   position: relative;
   width:50% ;
-  left:25% ;
   font-size: 30px;
   color: white;
 }

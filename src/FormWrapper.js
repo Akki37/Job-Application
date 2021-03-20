@@ -4,13 +4,12 @@ import "./FormWrapper.css"
 
 
 const FormWrapper=(props)=>{
-    const{AddFormData}=props
 
     return(
         <div className="FormContainer">
             <div className="UpPointer">
             </div>
-            <JobForm AddFormData={AddFormData}/>
+            <JobForm />
         </div>
     )
 }

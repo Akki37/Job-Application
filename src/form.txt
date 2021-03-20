@@ -1,0 +1,73 @@
+  const[time,setTime]=useState(new Date().toISOString())
+  const[fullName,setFullName]=useState("")
+  const[email,setEmail]=useState("")
+  const[ContactNo,setContactNo]=useState("")
+  const[profession,setProfession]=useState("")
+  const[experience,setExperience]=useState("")
+  const[techSkills,setTechSkills]=useState("")
+  const[status,setStatus]=useState("applied")
+  const[formError,setFormError]=useState({})
+ //const error={}
+//   function handleForm(e){
+//       if(e.target.name==="fullName"){
+//           const result=e.target.value
+//           if(/[0-9]/.test(result)){
+//             error.name="Alphabets Only"
+//             setFormError(error)
+//           }else{
+//               delete error.name
+//               setFormError(error)
+//           }
+//           setFullName(e.target.value)
+//       }else if(e.target.name==="email"){
+//         setEmail(e.target.value)
+//     }else if(e.target.name==="ContactNo"){
+//         const result = e.target.value.trim()
+//         if(/[A-Za-z!`@#$ %^&*()+=-[\]\\';,./{}|":<>? ~_]/.test(result)){
+//              error.contact="Numbers Only !"
+//              setFormError(error)
+//         }else{
+//              delete error.contact
+//              setFormError(error)
+//         }
+       
+//         setContactNo(`${result}`)
+        
+//     }else if(e.target.name==="profession"){
+//         setProfession(e.target.value)
+//     }else if(e.target.name==="experience"){
+//         setExperience(e.target.value)
+//     }else if(e.target.name==="techSkills"){
+//         setTechSkills(e.target.value)
+//     }
+//   }
+ 
+//   function handleSubmit(e){
+//       e.preventDefault()
+//       if(Object.keys(error).length){
+//           setFormError(error)
+//       }else{
+//           const FormData={
+//                  createdAt:time,
+//                  name:fullName,
+//                  email:email,
+//                  phone:`+91 ${ContactNo}`,
+//                  jobTitle:profession,
+//                  experience:experience,
+//                  skills:techSkills,
+//                  status:status
+//           }
+//           console.log(FormData);
+//           setFormError({})
+//           //reset form
+//           setTime(new Date().toISOString())
+//           setFullName("")
+//           setEmail('')
+//           setContactNo('')
+//           setProfession('')
+//           setExperience('')
+//           setTechSkills('')
+
+//           AddFormData(FormData)
+//       }
+//   }
